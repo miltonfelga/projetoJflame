@@ -25,6 +25,7 @@ public class JFListaNova extends javax.swing.JFrame {
         initComponents();
         lstNome1.setModel(listModel1);
         lstNome2.setModel(listModel2);
+        
     }
 
     /**
@@ -97,6 +98,11 @@ public class JFListaNova extends javax.swing.JFrame {
         jScrollPane3.setViewportView(lstNome2);
 
         chkLimparTudo.setText("Limpar tudo");
+        chkLimparTudo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkLimparTudoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -199,6 +205,11 @@ public class JFListaNova extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_rtbLista1ActionPerformed
+
+    private void chkLimparTudoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkLimparTudoActionPerformed
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_chkLimparTudoActionPerformed
 
     /**
      * @param args the command line arguments
